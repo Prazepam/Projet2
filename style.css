@@ -31,11 +31,13 @@ nav ul
     list-style-type: none;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav li
 {
     margin-right: 15px;
+    justify-content: space-around;
 }
 
 nav a
