@@ -1,4 +1,4 @@
-/*/Police/*/
+/* Police */
 @font-face {
     font-family: 'Raleway';
     src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
@@ -8,49 +8,216 @@
 
 body
 {
-    background-color: white;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway';
+    margin: 5%;
 }
-/*/logo/*/
-.image
-{
-    width: 120px;
-    height: 50px;
-}
+/* haut de page */
 
-.logo
-{
+.top-page {
+    height: 5%;
+    width: 100%;
+    margin-bottom: 0%;
+}
+header.header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-
 }
-/*/Navigation/*/
-nav ul
-{
+header img {
+    width: 15%;
+    height: 7%;
+}
+
+nav.menu{
+    display: flex;
     list-style-type: none;
+    width: 700px;
+    justify-content: space-between;
+    padding-left: 40%;
+    padding-right: 5%;
+    list-style-type: none;
+    list-style: none;
+ 
+}
+
+nav li{
+    color: black;
+    list-style-type: none;
+    list-style: none;
+}
+
+.Hébergement{
+    color: #1065fc;
+    list-style-type: none;
+    list-style: none;
+}
+
+.big-title{
+    font-size: 90%;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.Second-title{
+    font-size: 70%;
+}
+/* barre de recherche */
+.barre-recherche{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    border: 0,5px solid #f2f2f2;
+
+}
+.Espace-recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 210px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding-left: 20px;
+}
+
+.Icon-recherche{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    background-color: #f2f2f2;
+    color: black;
+    border-radius: 10px 0 0 10px;
+
+    
+}
+.Bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 100px;
+    background-color: #1065fc;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0; 
+}
+
+/* filtres */
+.filtre{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 2%;
+    font-weight: bold;
+    font-size: 60%;
+    width: 700px;
 }
 
-nav li
-{
-    margin-right: 15px;
+.service-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     justify-content: space-around;
+    border: 2px solid #d5d5d5;
+    border-radius: 30px;
+    font-weight: bold;
+    height: 30px;
+    margin-right: 10px;
 }
 
-nav a
-{
-    font-size: 1.3em;
-    color: #181818;
-    padding-bottom: 3px;
-    text-decoration: none;
+.service-item:hover > .delivery-icon{
+    color: white;
+    background-color: #1065fc;
 }
 
-/*/filtres/*/
-.Filtres{
+.service-item:hover > .delivery-text{
+    color: #1065fc;
+}
+
+.delivery-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+}
+.delivery-icon{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    font-size: 180%;
+    width: 32px;
+    height: 32px;
+    color: #1065fc;
+    background-color: #deebff;
+    border: 2px solid #deebff;
+    border-radius: 100%;
+    margin-left: -2px;
+}
+
+/* Info */
+.info{
+    display: flex;
+    align-items: center;
+    font-size: 70%;
+}
+
+.info-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #1065fc;
+    border: 2px solid #d5d5d5;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.info-text{
+    padding-left: 10px;
+}
+
+/* Premier Cadre */
+
+.Room-Marseille{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Room {
+    background-size: cover;
+    background-position: center;
+    min-width: 150px;
+    height: 100px;
+}
+
+.Room1{
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+
+.Room2{
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+
+.Room3{
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+
+.Room4{
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+
+.Room5{
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+
+.Room6{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
