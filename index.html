@@ -1,52 +1,106 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <meta charset="utf-8" />
-       <link rel="stylesheet" href="style.css" />
-       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-       <title>Reservia</title>
-   </head> 
-
-   <body>
-       <div id="bloc_page">
-           <header>
-               <nav>
-               <div class="logo">
-                   <img src="Projet 2 - Reservia/images/logo/Reservia@3x.png" alt="logo Reservia" id="image"/>
-               
-                   <ul>
-                       <li><a href="#">Hébergements</a></li>
-                       <li><a href="#">Activités</a></li>
-                       <li><a href="#">S'inscrire</a></li>
-                   </ul>
-               </nav>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Reservia</title>
+</head> 
+<body>
+    <section class="top-page">
+        <header class="header">
+            <img src="images/logo/Reservia@3x.png" alt="logo du site">
+            <nav class="menu">
+                <li><a href="#" class="Hébergement">Hébergements</a></li>
+                <li><a href="#" class="Activités">Activités</a></li>
+                <li><a href="#" class="S'inscrire">S'inscrie</a></li>
+            </nav>
+        </header>
+        <div class="landing-page">
+             <h1 class="big-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+             <p class="Second-title">En plein centre ville ou en pleine nature</p>
+        </div>
+    </section>
+    <section class="barre-recherche">
+        <div class="Icon-recherche">
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <div >
+            <input class="Espace-recherche" type="search" placeholder="Marseille, France">
+        </div>
+        <div class="Bouton">
+            <div>Recherche</div>
+        </div>
+    </section>
+    <section class="filtre">
+        <p class="filtre-title">Filtres</p>
+        <div class="service-item">
+            <div class="delivery-icon"><i class="fas fa-money-bill-wave"></i></div>
+            <p class="delivery-text">Économique</p>
+        </div>
+        <div class="service-item">
+            <div class="delivery-icon"><i class="fas fa-child"></i></div>
+            <p class="delivery-text">Familial</p>
+        </div>
+        <div class="service-item">
+            <div class="delivery-icon"><i class="fas fa-heart"></i></div>
+            <p class="delivery-text">Romantique</p>
+        </div>
+        <div class="service-item">
+            <div class="delivery-icon"><i class="fas fa-dog"></i></div>
+            <p class="delivery-text">Animaux autorisés</p>
+        </div>
+    </section>
+    <div class="info">
+        <div class="info-icon"><i class="fas fa-info"></i></div>
+        <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
+    </div>
+    <section class="Premiers-cadres">
+        <div class="Hb-Marseille">
+            <h2>Hébergement à Marseille</h2>
+                <div class="Room-Marseille">
+                    <a class="Room Room1">
+                        <div class="Room-details">
+                            <p class="Room-name">Auberge de la Cannebière</p>
+                            <p class="Room-price">Nuit à partir de 25€</p>
+                        </div>
+                    </a>
+                    <a class="Room Room2">
+                        <div class="Room-details">
+                            <p class="Room-name">Hôtel du port</p>
+                            <p class="Room-price">Nuit à partir de 52€</p>
+                        </div>
+                    </a>
+                    <a class="Room Room3">
+                        <div class="Room-details">
+                            <p class="Room-name">Hôtel les mouettes</p>
+                            <p class="Room-price">Nuit à partir de 76€</p>
+                        </div>
+                    </a>
+                    <a class="Room Room4">
+                        <div class="Room-details">
+                            <p class="Room-name">Hôtel de la mer</p>
+                            <p class="Room-price">Nuit à partir de 46€</p>
+                        </div>
+                    </a>
+                    <a class="Room Room5">
+                        <div class="Room-details">
+                            <p class="Room-name">Auberge Le Panier</p>
+                            <p class="Room-price">Nuit à partir de 23€</p>
+                        </div>
+                    </a>
+                    <a class="Room Room6">
+                        <div class="Room-details">
+                            <p class="Room-name">Hôtel chez Amina</p>
+                            <p class="Room-price">Nuit à partir de 96€</p>
+                        </div>
+                    </a>
                 </div>
+        </div>
+        <div class="Pop">
+            <h2>Les plus populaires</h2>
+        </div>
+    </section>
 
-               <section>
-                  <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                     <div>
-                        <div><i class="fas fa-map-marker-alt"></i></div>
-                        <input type="search" placeholder="Marseille, France" id="recherche_ville" name="q" />
-                        <button>Rechercher</button>
-                    </div>
-               </section>
-
-               <div class="Filtres"><h3>Filtres</h3>
-                    <div><i class="fas fa-money-bill-wave"></i><p>Économique</p></div>
-                    <div><i class="fas fa-child"></i><p>Familial</p></div>
-                    <div><i class="fas fa-heart"></i><p>Romantique</p></div>
-                    <div><i class="fas fa-dog"></i><p>Animaux autorisés</p></div>
-                    
-                </div>
-                <div class="Info"><i class="fas fa-info"></i><h3>Plus de 500 logements sont disponnibles dans cette ville>
-               </div>
-               
-
-
-           </header>
-
-       </div>
-      
-   </body>
+</body>
 </html>
