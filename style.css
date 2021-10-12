@@ -40,14 +40,14 @@ nav.menu{
 }
 
 .Hebergement{
-    color: #1065fc;
+    color: #0065fc;
     list-style-type: none;
     list-style: none;
     text-decoration: none;
 
 }
 .S-inscrire{
-    color: #1065fc;
+    color: #0065fc;
     text-decoration: none;
     font-weight: bold;
 }
@@ -102,7 +102,7 @@ nav.menu{
     align-items: center;
     height: 40px;
     width: 100px;
-    background-color: #1065fc;
+    background-color: #0065fc;
     color: white;
     cursor: pointer;
     border-radius: 0 10px 10px 0; 
@@ -135,11 +135,11 @@ nav.menu{
 
 .service-item:hover > .delivery-icon{
     color: white;
-    background-color: #1065fc;
+    background-color: #0065fc;
 }
 
 .service-item:hover > .delivery-text{
-    color: #1065fc;
+    color: #0065fc;
 }
 
 .delivery-text{
@@ -158,7 +158,7 @@ nav.menu{
     font-size: 180%;
     width: 32px;
     height: 32px;
-    color: #1065fc;
+    color: #0065fc;
     background-color: #deebff;
     border: 2px solid #deebff;
     border-radius: 100%;
@@ -177,7 +177,7 @@ nav.menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1065fc;
+    color: #0065fc;
     border: 2px solid #d5d5d5;
     width: 20px;
     height: 20px;
@@ -239,10 +239,11 @@ nav.menu{
     border: 3px solid white;
     box-shadow: 5px 5px 10px #d5d5d5;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 .good{
-    color: #1065fc;
+    color: #0065fc;
 }
 
 .bad{
@@ -282,6 +283,7 @@ nav.menu{
     margin-bottom: 5%;
     box-shadow: 5px 5px 10px #d5d5d5;
     border: white solid 2px;
+    cursor: pointer;
 }
 .Best-details{
     display: flex;
@@ -299,6 +301,7 @@ nav.menu{
     border-radius: 0 15px 15px 0;
     box-shadow: 5px 5px 10px #d5d5d5;
     border: white solid 2px;
+    cursor: pointer;
 }
 .noteB{
     margin-top: 20%;
@@ -315,50 +318,139 @@ nav.menu{
 
 /* Activités */
 .best-activity{
-    background-color: aqua;
-    height: 500px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 400px);
+    height: 450px;
+    display: flex;
     flex-wrap: wrap;
-}
-
-.activity-box{
-    background-size: cover;
-    background-position: center;
-    width: 150px;
-    height: 200px;
-    flex: 1;
+    justify-content: space-between;
+    align-items: center;
 }
 .activity1{
-    background-image: url(images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-    grid-column: 1/3;
-    grid-row: 1/3;
-   
+    height: 375px;
+    width: 260PX;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
 }
 .activity2{
-    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-    grid-column: 3/5;
-    grid-row: 3/5;
+    height: 160px;
+    width: 260px;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
 }
 .activity3{
-    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-    grid-column: 3/5;
-    grid-row: 3/5;
+    height: 120px;
+    width: 260px;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
 }
 .activity4{
-    background-image: url(images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-  
+    height: 375px;
+    width: 260px;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
 }
 .activity5{
-    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    height: 140px;
+    width: 260px;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
 }
 .activity6{
-    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-}    
-.activity-details{
-    background-color: wheat;
-    width: 100%;
- 
-  
+    height: 140px;
+    width: 260px;
+    flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.activity-M{
+    width: 260px;
+    height: 420px;
+    background-color: white;
+    font-size: 70%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px #d5d5d5;
+    cursor: pointer;
+}
+.activity1 :hover > .activity-name{
+    color: #0065fc;
+}
+.activity-S3{
+    width: 260px;
+    height: 190px;
+    background-color: white;
+    font-size: 70%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px #d5d5d5;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.activity-S1{
+    width: 260px;
+    height: 210px;
+    background-color: white;
+    font-size: 70%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px #d5d5d5;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.activity-S2{
+    width: 260px;
+    height: 170px;
+    background-color: white;
+    font-size: 70%;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 5px 5px 10px #d5d5d5;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+.activity-name{
+    align-items: center;
+    margin: 5%;
+}
+
+/* Footer */
+footer{
+    background-color: #f2f2f2;
+    margin-left: -6%;
+    margin-right: -6%;
+    margin-bottom: -6%;
+    padding-bottom: 1%;
+}
+.Pied-page{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 25%;
+
+}
+.titre-pied{
+    font-weight: bold;
+    padding-top: 10%;
+}
+.liste-pied{
+    text-decoration: none;
+    color: black;
+    margin-top: 5%;
+}
+.menu-pied{
+    list-style-type: none;
+    padding-top: 5%;
+}
+.ligne1{
+    margin-bottom: 10%;
+}
+.ligne2{
+    margin-bottom: 10%;
 }

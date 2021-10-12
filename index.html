@@ -11,8 +11,8 @@
         <header class="header">
             <img src="images/logo/Reservia@3x.png" alt="logo du site">
             <nav class="menu">
-                <li><a href="#" class="Hebergement">Hébergements</a></li>
-                <li><a href="#" class="Activity">Activités</a></li>
+                <li><a href="#Hébergements" class="Hebergement">Hébergements</a></li>
+                <li><a href="#Activités" class="Activity">Activités</a></li>
                 <li><a href="#" class="S-inscrire">S'inscrie</a></li>
             </nav>
         </header>
@@ -26,7 +26,9 @@
             <i class="fas fa-map-marker-alt"></i>
         </div>
         <div >
-            <input class="Espace-recherche" type="search" placeholder="Marseille, France">
+            <form>
+                <input class="Espace-recherche" type="search" placeholder="Marseille, France">
+            </form>
         </div>
         <div class="Bouton">
             <div>Recherche</div>
@@ -55,7 +57,7 @@
         <div class="info-icon"><i class="fas fa-info"></i></div>
         <p class="info-text">Plus de 500 logements sont disponibles dans cette ville</p>
     </div>
-    <section class="Premiers-cadres">
+    <section id="Hébergements" class="Premiers-cadres">
         <div class="Hb-Marseille">
             <h2>Hébergement à Marseille</h2>
                 <div class="Room-Marseille">
@@ -189,41 +191,78 @@
                 </div>
         </div>
     </section>
-    <section class="galerie">
+    <section id="Activités" class="galerie">
         <h2>Activité à Marseille</h2>
         <div class="best-activity">
-            <a class="activity-box activity1">
-                <div class="activity-details">
-                    <p class="activity-name">Vieux Port</p>
+            <div class="activity-M">
+                <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" class="activity-box activity1">
+                    <div class="activity-details">
+                        <p class="activity-name">Vieux Port</p>
+                    </div>
+            </div>
+            <div class="activity-column">
+                <div class="activity-S1">
+                    <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomèques" class="activity-box activity2">
+                        <div class="activity-details">
+                            <p class="activity-name">Fort de Pomègues</p>
+                        </div>
                 </div>
-            </a>
-            <a class="activity-box activity2">
-                <div class="activity-details">
-                    <p class="activity-name">Fort de Pomègues</p>
+                <div class="activity-S2">
+                    <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" class="activity-box activity3">
+                        <div class="activity-details">
+                            <p class="activity-name">Îles du Frioul</p>
+                        </div>
                 </div>
-            </a>
-            <a class="activity-box activity3">
-                <div class="activity-details">
-                    <p class="activity-name">Îles du Frioul</p>
+            </div>
+            <div class="activity-M">
+                <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Les Calanques" class="activity-box activity4">
+                    <div class="activity-details">
+                        <p class="activity-name">Parc National des Calanques</p>
+                    </div>
+            </div>
+            <div class="activity-column">
+                <div class="activity-S3">
+                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame de la Garde" class="activity-box activity5">
+                        <div class="activity-details">
+                            <p class="activity-name">Notre-Dame-de-la-Garde</p>
+                        </div>
                 </div>
-            </a>
-            <a class="activity-box activity4">
-                <div class="activity-details">
-                    <p class="activity-name">Parc National des Calanques</p>
+                <div class="activity-S3">
+                    <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" class="activity-box activity6">
+                        <div class="activity-details">
+                            <p class="activity-name">Parc Longchamp</p>
+                        </div>
                 </div>
-            </a>
-            <a class="activity-box activity5">
-                <div class="activity-details">
-                    <p class="activity-name">Notre-Dame-de-la-Garde</p>
-                </div>
-            </a>
-            <a class="activity-box activity6">
-                <div class="activity-details">
-                    <p class="activity-name">Parc Longchamp</p>
-                </div>
-            </a>
+            </div>           
         </div>
     </section>
+    <footer>
+        <div class="Pied-page">
+            <div class="A propos">
+                <p class="titre-pied">A propos</p>
+                <nav class="menu-pied">
+                    <div class="ligne1"><li><a href="#" class="liste-pied">Fonctionnement du site</a></li></div>
+                    <div class="ligne2"><li><a href="#" class="liste-pied ligne2">Conditions générales de vente</a></li></div>
+                    <li><a href="#" class="liste-pied ligne3">Données et confidentialité</a></li>
+                </nav>
+            </div>
+            <div class="nos-hebergements">
+                <p class="titre-pied">Nos hébergements</p>
+                <nav class="menu-pied">
+                    <div class="ligne1"><li><a href="#" class="liste-pied">Charte qualité</a></li></div>
+                    <div class="ligne2"><li><a href="#" class="liste-pied">Soumettre votre hôtel</a></li></div>
+                </nav>
+            </div>
+            <div class="assistance">
+                <p class="titre-pied">Assistance</p>
+                <nav class="menu-pied">
+                    <div class="ligne1"><li><a href="#" class="liste-pied">Centre d'aide</a></li></div>
+                    <div class="ligne2"><li><a href="#" class="liste-pied">Nous contacter</a></li></div>
+                </nav>
 
+            </div>
+        </div>
+    </footer>
 </body>
+   
 </html>
