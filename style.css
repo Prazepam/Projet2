@@ -34,13 +34,10 @@ nav.menu{
     justify-content: space-between;
     padding-left: 50%;
     padding-right: 5%;
-    list-style-type: none;
-    list-style: none;
- 
 }
 
-.Hebergement{
-    color: #0065fc;
+.Menu1{
+    color: black;
     list-style-type: none;
     list-style: none;
     text-decoration: none;
@@ -51,9 +48,9 @@ nav.menu{
     text-decoration: none;
     font-weight: bold;
 }
-.Activity{
-    color: black;
-    text-decoration: none;
+.Menu1:hover{
+    color: #0065fc;
+    border-top: #0065fc 2px solid;
 }
 
 .big-title{
@@ -131,6 +128,7 @@ nav.menu{
     font-weight: bold;
     height: 30px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .service-item:hover > .delivery-icon{
@@ -190,7 +188,7 @@ nav.menu{
 
 /* Premier Cadre */
 .Hb-Marseille{
-    height: 530px;
+    height: 580px;
     width: 70%;
     background-color: #f2f2f2;
     border-radius: 30px;
@@ -201,15 +199,16 @@ nav.menu{
 {
     margin: 5%;
     font-weight: bolder;
-    font-size: 80%;
+    font-size: 110%;
 }
 
-.Room-Marseille h3
+.Hb-Marseille h3
 {
-    font-size: 60%;
+    font-size: 80%;
     height: 15%;
-    margin-bottom: 23%;
     font-weight: bolder;
+    margin: 5%;
+    margin-top: -3%;
 }
 
 .Room-Marseille{
@@ -226,20 +225,34 @@ nav.menu{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 60%;
+    height: 50%;
     border-radius: 10px 10px 0px 0px;
 }
 
 .Room-details{
     width: 30%;
-    height: 190px;
+    height: 200px;
     background-color: white;
-    font-size: 60%;
+    font-size: 80%;
     border-radius: 15px;
     border: 3px solid white;
     box-shadow: 5px 5px 10px #d5d5d5;
     margin-top: 20px;
     cursor: pointer;
+}
+.Room-details:hover > .Room-nameA{
+    color: #0065fc;
+}
+
+.Room-nameA{
+    font-weight: bold;
+    padding-left: 5%;
+}
+.Room-priceA{
+    padding-left: 5%;
+}
+.noteA{
+    padding-left: 5%;
 }
 
 .good{
@@ -249,10 +262,13 @@ nav.menu{
 .bad{
     color: #d5d5d5;
 }
+span{
+    font-weight: bold;
+}
 
 /* Deuxième cadre */
 .Pop{
-    height: 530px;
+    height: 580px;
     width: 40%;
     background-color: #f2f2f2;
     border-radius: 30px;
@@ -266,12 +282,14 @@ nav.menu{
     text-align: center;
     margin-left: -10%;
     margin-right: -10%;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
 
 }
 .Pop h2{
     padding-top: 5%;
     font-weight: bolder;
-    font-size: 80%;
+    font-size: 110%;
 }
 .B-Room{
     background-size: cover;
@@ -284,7 +302,22 @@ nav.menu{
     box-shadow: 5px 5px 10px #d5d5d5;
     border: white solid 2px;
     cursor: pointer;
+    flex-wrap: wrap;
 }
+.B-Roombis{
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    box-shadow: 5px 5px 10px #d5d5d5;
+    border: white solid 2px;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
 .Best-details{
     display: flex;
     align-items: center;
@@ -293,137 +326,135 @@ nav.menu{
 .Room-info{
     background-color: white;
     height: 120px;
-    width: 220px;
+    width: 80%;
     margin-bottom: 5%;
     margin-right: 5%;
-    font-size: 60%;
     padding-left: 5%;
+    font-size: 80%;
     border-radius: 0 15px 15px 0;
     box-shadow: 5px 5px 10px #d5d5d5;
     border: white solid 2px;
     cursor: pointer;
 }
 .noteB{
-    margin-top: 20%;
+    margin-top: 15%;
+}
+.noteC{
+    margin-top: 10%;
 }
 
 .Premiers-cadres{
     display: flex;
     justify-content: space-around;
     margin: 5%;
+    flex-wrap: wrap;
 }
 .Room-name{
     font-weight: bold;
 }
-
-/* Activités */
-.best-activity{
-    height: 450px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.activity1{
-    height: 375px;
-    width: 260PX;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-}
-.activity2{
-    height: 160px;
-    width: 260px;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-}
-.activity3{
-    height: 120px;
-    width: 260px;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-}
-.activity4{
-    height: 375px;
-    width: 260px;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-}
-.activity5{
-    height: 140px;
-    width: 260px;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-}
-.activity6{
-    height: 140px;
-    width: 260px;
-    flex-direction: column;
-    border-radius: 10px 10px 0px 0px;
-}
-
-.activity-M{
-    width: 260px;
-    height: 420px;
-    background-color: white;
-    font-size: 70%;
-    font-weight: bold;
-    border-radius: 15px;
-    border: 3px solid white;
-    box-shadow: 5px 5px 10px #d5d5d5;
-    cursor: pointer;
-}
-.activity1 :hover > .activity-name{
+.Room-info:hover > .Room-name{
     color: #0065fc;
 }
-.activity-S3{
-    width: 260px;
-    height: 190px;
-    background-color: white;
-    font-size: 70%;
-    font-weight: bold;
+
+/* Activités */
+.Espace-activity{
+    width: 100%;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+.Espace-activityB{
+    width: 23%;
+    height: 420px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.activity-cadre{
+    width: 23%;
+    height: 420px;
     border-radius: 15px;
-    border: 3px solid white;
-    box-shadow: 5px 5px 10px #d5d5d5;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
 }
-.activity-S1{
-    width: 260px;
-    height: 210px;
-    background-color: white;
-    font-size: 70%;
-    font-weight: bold;
+.activity-cadreB{
+    width: 100%;
     border-radius: 15px;
-    border: 3px solid white;
-    box-shadow: 5px 5px 10px #d5d5d5;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    box-shadow: 5px 5px 5px 1px #f2f2f2;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
 }
-.activity-S2{
-    width: 260px;
+
+.pic-activity1{
+    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.pic-activity2{
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
     height: 170px;
-    background-color: white;
-    font-size: 70%;
-    font-weight: bold;
-    border-radius: 15px;
-    border: 3px solid white;
-    box-shadow: 5px 5px 10px #d5d5d5;
-    margin-bottom: 10%;
-    margin-top: 10%;
-    cursor: pointer;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.pic-activity3{
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.pic-activity4{
+    background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.pic-activity5{
+    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 130px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.pic-activity6{
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
 }
 .activity-name{
     align-items: center;
-    margin: 5%;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.activity-cadre:hover > .activity-name{
+    color: #0065fc;
+}
+.activity-cadreB:hover > .activity-name{
+    color: #0065fc;
 }
 
 /* Footer */
 footer{
     background-color: #f2f2f2;
-    margin-left: -6%;
-    margin-right: -6%;
+    margin-left: -5%;
+    margin-right: -5%;
     margin-bottom: -6%;
     padding-bottom: 1%;
 }
