@@ -466,16 +466,25 @@ footer{
     margin-bottom: -6%;
 }
 .Pied-page{
-    margin: 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 25%;
 
 }
-.titre-pied{
+.titre-pied1{
     font-weight: bold;
-    padding-top: 10%;
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.titre-pied2{
+    font-weight: bold;
+    margin-top: -20%;
+    margin-left: 5%;
+}
+.titre-pied3{
+    font-weight: bold;
+    margin-top: -30%;
+    margin-left: 5%;
 }
 .liste-pied{
     text-decoration: none;
@@ -484,7 +493,7 @@ footer{
 }
 .menu-pied{
     list-style-type: none;
-    padding-top: 5%;
+    margin: 5%;
 }
 .ligne1{
     margin-bottom: 10%;
