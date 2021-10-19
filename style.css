@@ -39,8 +39,8 @@ nav.menu{
 .Menu1{
     color: black;
     list-style-type: none;
-    list-style: none;
     text-decoration: none;
+    padding-top: 50px;
 
 }
 .S-inscrire{
@@ -51,6 +51,7 @@ nav.menu{
 .Menu1:hover{
     color: #0065fc;
     border-top: #0065fc 2px solid;
+    
 }
 
 .big-title{
@@ -116,6 +117,9 @@ nav.menu{
     font-size: 60%;
     width: 60%;
 }
+.filtre-title{
+    margin-right: 2%;
+}
 
 .service-item{
     display: flex;
@@ -154,13 +158,13 @@ nav.menu{
     align-items: center;
     justify-content: center;
     font-size: 180%;
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
     color: #0065fc;
     background-color: #deebff;
     border: 2px solid #deebff;
     border-radius: 100%;
-    margin-left: -2px;
+    margin-left: -4px;
 }
 
 /* Info */
@@ -355,6 +359,9 @@ span{
 .Room-info:hover > .Room-name{
     color: #0065fc;
 }
+.B-Room:hover > .Room-name{
+    color: #0065fc;
+}
 
 /* Activités */
 .Espace-activity{
@@ -453,10 +460,10 @@ span{
 /* Footer */
 footer{
     background-color: #f2f2f2;
-    margin-left: -5%;
+    height: 100%;
     margin-right: -5%;
+    margin-left: -5%;
     margin-bottom: -6%;
-    padding-bottom: 1%;
 }
 .Pied-page{
     margin: 5%;
@@ -484,4 +491,251 @@ footer{
 }
 .ligne2{
     margin-bottom: 10%;
+}
+
+/* PARTIE RESPONSIVE */
+@media  screen and (max-width: 768px) {
+    body{
+        margin: 5%;
+    }
+    nav.menu{
+        display: flex;
+        list-style-type: none;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 65%;
+    }
+    .Menu1{
+        padding-bottom: 50%;
+    }
+    header img {
+        width: 15%;
+        height: 7%;
+    }
+    .filtre{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 2%;
+        font-weight: bold;
+        font-size: 60%;
+        width: 100%;
+    }
+    .barre-recherche{
+        display: flex;
+        align-items: center;
+        width: 70%;
+        border: 0,5px solid #f2f2f2;
+    }
+    .Espace-recherche{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        font-size: 18px;
+        color: black;
+        font-weight: bold;
+        border: none;
+        padding-left: 20px;
+    }
+    
+    .Icon-recherche{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        background-color: #f2f2f2;
+        color: black;
+        border-radius: 10px 0 0 10px;
+    }
+    .Premiers-cadres{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .Hb-Marseille{
+        height: 580px;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 30px;
+        margin-top: -2%;
+        margin-left: -5%;
+        margin-bottom: 5%;
+
+    }
+    .Pop{
+        height: 580px;
+        width: 100%;
+        background-color: #f2f2f2;
+        border-radius: 30px;
+        margin-left: -5%;
+        margin-top: -2%;
+        margin-bottom: 5%;
+    }
+    .Best-details{
+        display: flex;
+        align-items: center;
+        margin-bottom: 2%;
+        justify-content: center;
+    }
+    .B-Room{
+        background-size: cover;
+        background-position: center;
+        width: 240px;
+        height: 140px;
+        border-radius: 10px 0 0 10px;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        box-shadow: 5px 5px 10px #d5d5d5;
+        border: white solid 2px;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+    .Room-info{
+        background-color: white;
+        height: 140px;
+        width: 60%;
+        margin-bottom: 2%;
+        margin-right: 5%;
+        padding-left: 5%;
+        font-size: 80%;
+        border-radius: 0 15px 15px 0;
+        box-shadow: 5px 5px 10px #d5d5d5;
+        border: white solid 2px;
+        cursor: pointer;
+    }
+    .B-Roombis{
+        background-size: cover;
+        background-position: center;
+        width: 120px;
+        height: 80px;
+        border-radius: 10px 0 0 10px;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        box-shadow: 5px 5px 10px #d5d5d5;
+        border: white solid 2px;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+    .Pop-title{
+        margin-right: 5%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: -5%;
+        margin-top: -2%;
+    }
+    .B-Roombis{
+        background-size: cover;
+        background-position: center;
+        width: 240px;
+        height: 140px;
+        border-radius: 10px 0 0 10px;
+        margin-left: 5%;
+        margin-bottom: 2%;
+        box-shadow: 5px 5px 10px #d5d5d5;
+        border: white solid 2px;
+        cursor: pointer;
+        flex-wrap: wrap;
+    }
+    .Room-name{
+        font-weight: bold;
+        font-size: 140%;
+    }
+    .noteB{
+        margin-top: 10%;
+    }
+    .noteC{
+        margin-top: 5%;
+    }
+    .service-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        justify-content: space-around;
+        border: 2px solid #d5d5d5;
+        border-radius: 30px;
+        font-weight: bold;
+        height: 30px;
+        margin-right: 5px;
+        cursor: pointer;
+    }
+    .Espace-activity{
+        display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+                "pic-activity1 pic-activity2"
+                "pic-activity1 pic-activity3"
+                "pic-activity4 pic-activity5"
+                "pic-activity4 pic-activity6";
+        margin-bottom: 5%;
+    }
+    .Espace-activityB{
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .activity-cadre{
+        width: 80%;
+        height: 420px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px 1px #f2f2f2;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin-bottom: 5%;
+    }
+    .Espace-activity{
+        width: 100%;
+        height: 840px;
+    }
+    .Pied-page{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nos-hebergements{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        margin-top: -5%;
+    }
+    .assisstance{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -2%;
+    }
+    .A-propos{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        margin-top: -2%;
+    }
+    .Menu1:hover{
+        color: #0065fc;
+        border: none;
+    }
+}
+
+/* RESPONSIVE mobile */
+@media  screen and (max-width: 375px){
+    body{
+        margin: 5%;
+    }
+    h1{
+        color: red;
+    }
+
 }
