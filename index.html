@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Reservia</title>
@@ -9,10 +10,12 @@
 <body>
     <section class="top-page">
         <header class="header">
-            <img src="images/logo/Reservia@3x.png" alt="logo du site">
+            <img src="images/logo/Reservia@3x.png" alt="logo du site" class="logo">
             <nav class="menu">
-                <li><a href="#Hébergements" class="Menu1">Hébergements</a></li>
-                <li><a href="#Activités" class="Menu1">Activités</a></li>
+                <div class="Menu1">
+                    <li><a href="#Hébergements" class="Menu1 Hebergement">Hébergements</a></li>
+                    <li><a href="#Activités" class="Menu1 Act">Activités</a></li>
+                </div>
                 <li><a href="#" class="S-inscrire">S'inscrire</a></li>
             </nav>
         </header>
@@ -62,8 +65,8 @@
             <h2>Hébergement à Marseille</h2>
                 <div class="Room-Marseille">
                     <div class="Room-details">
-                        <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" class="Room">
-                            <p class="Room-nameA">Auberge de la Cannebière</p>
+                        <div class="RoomA">
+                            <p class="Room-nameA margtop">Auberge de la Cannebière</p>
                             <p class="Room-priceA">Nuit à partir de 25<span>€</span></p>
                             <div class="noteA">
                                 <i class="fas fa-star good"></i>
@@ -72,10 +75,11 @@
                                 <i class="fas fa-star good"></i>
                                 <i class="fas fa-star bad"></i>
                             </div>
+                        </div>
                     </div>
                     <div class="Room-details">
-                        <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" class="Room">
-                            <p class="Room-nameA">Hôtel du port</p>
+                        <div class="RoomB">
+                            <p class="Room-nameA margtop">Hôtel du port</p>
                             <p class="Room-priceA">Nuit à partir de 52<span>€</span></p>
                             <div class="noteA">
                                 <i class="fas fa-star good"></i>
@@ -84,10 +88,11 @@
                                 <i class="fas fa-star good"></i>
                                 <i class="fas fa-star good"></i>
                             </div>
+                        </div>
                     </div>
                     <div class="Room-details">
-                        <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" class="Room">
-                            <p class="Room-nameA">Hôtel les mouettes</p>
+                        <div class="RoomC">
+                            <p class="Room-nameA margtop">Hôtel les mouettes</p>
                             <p class="Room-priceA">Nuit à partir de 76<span>€</span></p>
                             <div class="noteA">
                                 <i class="fas fa-star good"></i>
@@ -96,10 +101,11 @@
                                 <i class="fas fa-star good"></i>
                                 <i class="fas fa-star bad"></i>
                             </div>
+                        </div>
                     </div>
                     <div class="Room-details">
-                        <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" class="Room">
-                            <p class="Room-nameA">Hôtel de la mer</p>
+                        <div class="RoomD">
+                            <p class="Room-nameA margtop">Hôtel de la mer</p>
                             <p class="Room-priceA">Nuit à partir de 46<span>€</span></p>
                             <div class="noteA">
                                 <i class="fas fa-star good"></i>
@@ -108,10 +114,11 @@
                                 <i class="fas fa-star bad"></i>
                                 <i class="fas fa-star bad"></i>
                             </div>
+                        </div>
                     </div>
                     <div class="Room-details">
-                        <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" class="Room">
-                            <p class="Room-nameA">Auberge Le Panier</p>
+                        <div class="RoomE">
+                            <p class="Room-nameA margtop">Auberge Le Panier</p>
                             <p class="Room-priceA">Nuit à partir de 23<span>€</span></p>
                             <div class="noteA">
                                 <i class="fas fa-star good"></i>
@@ -120,10 +127,11 @@
                                 <i class="fas fa-star good"></i>
                                 <i class="fas fa-star bad"></i>
                             </div>
+                        </div>
                     </div>
                     <div class="Room-details">
-                        <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" class="Room">
-                            <p class="Room-nameA">Hôtel chez Amina</p>
+                        <div class="RoomF">
+                            <p class="Room-nameA margtop">Hôtel chez Amina</p>
                             <p class="Room-priceA">Nuit à partir de 96<span>€</span></p>
                             <div class="noteA">
                                 <i class="fas fa-star good"></i>
@@ -132,6 +140,7 @@
                                 <i class="fas fa-star good"></i>
                                 <i class="fas fa-star good"></i>
                             </div>
+                        </div>
                     </div>
                     
                 </div>
@@ -177,7 +186,7 @@
                         <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel tout bleu et blanc" class="B-Room">
                             <div class="Room-info">
                                 <p class="Room-name">Hôtel Tout bleu et Blanc</p>
-                                <p class="Room-price">Nuit à partir de 68</p>
+                                <p class="Room-price">Nuit à partir de 68<span>€</span></p>
                                     <div class="noteB">
                                     <i class="fas fa-star good"></i>
                                     <i class="fas fa-star good"></i>
@@ -244,7 +253,7 @@
                 </nav>
             </div>
             <div class="Assistance">
-                <p class="titre-pied3">Assistance</p>
+                <p class="titre-pied2">Assistance</p>
                 <nav class="menu-pied">
                     <div class="ligne1"><li><a href="#" class="liste-pied">Centre d'aide</a></li></div>
                     <div class="ligne2"><li><a href="#" class="liste-pied">Nous contacter</a></li></div>

@@ -9,7 +9,6 @@
 body
 {
     font-family: 'Raleway';
-    margin: 5%;
 }
 /* haut de page */
 
@@ -17,22 +16,27 @@ body
     height: 5%;
     width: 100%;
     margin-bottom: 0%;
+    margin-top: 5%;
 }
 header.header{
     display: flex;
     align-items: center;
+    margin-left: 5%;
 }
 header img {
     width: 10%;
     height: 5%;
 }
-
+.landing-page{
+    width: 80%;
+    margin-left: 5%;
+}
 nav.menu{
     display: flex;
     list-style-type: none;
-    width: 100%;
+    width: 40%;
     justify-content: space-between;
-    padding-left: 50%;
+    padding-left: 40%;
     padding-right: 5%;
 }
 
@@ -40,7 +44,10 @@ nav.menu{
     color: black;
     list-style-type: none;
     text-decoration: none;
-    padding-top: 50px;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-right: 20%;
 
 }
 .S-inscrire{
@@ -51,7 +58,6 @@ nav.menu{
 .Menu1:hover{
     color: #0065fc;
     border-top: #0065fc 2px solid;
-    
 }
 
 .big-title{
@@ -68,6 +74,7 @@ nav.menu{
     align-items: center;
     width: 40%;
     border: 0,5px solid #f2f2f2;
+    margin-left: 5%;
 }
 .Espace-recherche{
     display: flex;
@@ -116,6 +123,7 @@ nav.menu{
     font-weight: bold;
     font-size: 60%;
     width: 60%;
+    margin-left: 5%;
 }
 .filtre-title{
     margin-right: 2%;
@@ -173,6 +181,7 @@ nav.menu{
     align-items: center;
     font-size: 70%;
     margin-top: 2%;
+    margin-left: 5%;
 }
 
 .info-icon {
@@ -192,11 +201,10 @@ nav.menu{
 
 /* Premier Cadre */
 .Hb-Marseille{
-    height: 580px;
-    width: 70%;
+    height: 500px;
+    width: 60%;
     background-color: #f2f2f2;
     border-radius: 30px;
-    margin-left: -10%;
     margin-top: -2%;
 }
 .Hb-Marseille h2
@@ -209,14 +217,12 @@ nav.menu{
 .Hb-Marseille h3
 {
     font-size: 80%;
-    height: 15%;
+    height: 10px;
     font-weight: bolder;
-    margin: 5%;
-    margin-top: -3%;
+    margin-left: 5%;
 }
 
 .Room-Marseille{
-    min-height: 80%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -224,33 +230,54 @@ nav.menu{
     margin-top: -5%;
 
 }
-
-.Room {
+.margtop{
+    padding-top: 55%;
+}
+.RoomA{
+    background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+}
+.RoomB{
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+}
+.RoomC{
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+}
+.RoomD{
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+}
+.RoomE{
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+}
+.RoomF{
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+}
+.RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
     background-size: cover;
     background-position: center;
-    width: 100%;
     height: 50%;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
+    margin-top: -5%;
 }
-
 .Room-details{
     width: 30%;
-    height: 200px;
+    height: 160px;
     background-color: white;
-    font-size: 80%;
+    font-size: 60%;
     border-radius: 15px;
     border: 3px solid white;
     box-shadow: 5px 5px 10px #d5d5d5;
     margin-top: 20px;
     cursor: pointer;
 }
-.Room-details:hover > .Room-nameA{
-    color: #0065fc;
+.Room-details:hover{
+    color:#0065fc;
 }
 
 .Room-nameA{
-    font-weight: bold;
+    font-weight:bolder;
     padding-left: 5%;
+    font-size: 130%;
 }
 .Room-priceA{
     padding-left: 5%;
@@ -272,11 +299,10 @@ span{
 
 /* Deuxième cadre */
 .Pop{
-    height: 580px;
-    width: 40%;
+    height: 500px;
+    width: 30%;
     background-color: #f2f2f2;
     border-radius: 30px;
-    margin-right: -10%;
     margin-top: -2%;
 }
 .Pop-title{
@@ -288,18 +314,19 @@ span{
     margin-right: -10%;
     flex-wrap: wrap;
     padding-bottom: 5%;
+    padding-top: 5%;
 
 }
 .Pop h2{
-    padding-top: 5%;
+    padding-top: 2%;
     font-weight: bolder;
     font-size: 110%;
 }
 .B-Room{
     background-size: cover;
     background-position: center;
-    width: 140px;
-    height: 120px;
+    width: 35%;
+    height: 100px;
     border-radius: 10px 0 0 10px;
     margin-left: 5%;
     margin-bottom: 5%;
@@ -329,8 +356,8 @@ span{
 }
 .Room-info{
     background-color: white;
-    height: 120px;
-    width: 80%;
+    height: 100px;
+    width: 50%;
     margin-bottom: 5%;
     margin-right: 5%;
     padding-left: 5%;
@@ -349,8 +376,9 @@ span{
 
 .Premiers-cadres{
     display: flex;
+    width: 100%;
     justify-content: space-around;
-    margin: 5%;
+    margin-top: 5%;
     flex-wrap: wrap;
 }
 .Room-name{
@@ -364,6 +392,10 @@ span{
 }
 
 /* Activités */
+.galerie{
+    margin-left: 2%;
+    margin-right: 2%;
+}
 .Espace-activity{
     width: 100%;
     height: 480px;
@@ -459,11 +491,8 @@ span{
 
 /* Footer */
 footer{
-    background-color: #f2f2f2;
+    background-color:#f2f2f2;
     height: 100%;
-    margin-right: -5%;
-    margin-left: -5%;
-    margin-bottom: -6%;
 }
 .Pied-page{
     display: flex;
@@ -473,18 +502,12 @@ footer{
 }
 .titre-pied1{
     font-weight: bold;
-    margin-top: 15%;
     margin-left: 5%;
 }
 .titre-pied2{
     font-weight: bold;
-    margin-top: -20%;
     margin-left: 5%;
-}
-.titre-pied3{
-    font-weight: bold;
-    margin-top: -30%;
-    margin-left: 5%;
+    margin-top: -2%;
 }
 .liste-pied{
     text-decoration: none;
@@ -501,160 +524,123 @@ footer{
 .ligne2{
     margin-bottom: 10%;
 }
-
+.A-propos, .Assistance, .hebergements{
+    width: 30%;
+}
+.A-propos{
+    margin-left: 2%;
+}
 /* PARTIE RESPONSIVE */
-@media  screen and (max-width: 768px) {
-    body{
-        margin: 5%;
+@media  screen and (max-width: 768px){
+    .top-page{
+        margin-left: 0%;
     }
     nav.menu{
-        display: flex;
-        list-style-type: none;
-        flex-direction: column;
         width: 100%;
-        justify-content: space-between;
-        padding-left: 65%;
-    }
-    .Menu1{
-        padding-bottom: 50%;
+        padding-left: 30%;
     }
     header img {
         width: 15%;
         height: 7%;
     }
     .filtre{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        justify-content: center;
         padding-top: 2%;
         font-weight: bold;
         font-size: 60%;
-        width: 100%;
+        width: 95%;
+        margin-left: 0%;
     }
     .barre-recherche{
-        display: flex;
-        align-items: center;
         width: 70%;
-        border: 0,5px solid #f2f2f2;
+        margin-left: 25%;
+        margin-top: 5%;
+        margin-bottom: 2%;
     }
     .Espace-recherche{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 40px;
         width: 100%;
         font-size: 18px;
-        color: black;
-        font-weight: bold;
-        border: none;
         padding-left: 20px;
     }
     
     .Icon-recherche{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 40px;
         width: 40px;
-        background-color: #f2f2f2;
-        color: black;
-        border-radius: 10px 0 0 10px;
     }
     .Premiers-cadres{
-        display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
         flex-wrap: wrap;
         width: 100%;
     }
+    .margtop{
+        padding-top: 58%;
+    }
+    .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
+        height: 60%;
+    }
+    .Room-details{
+        height: 180px;
+    }
     .Hb-Marseille{
-        height: 580px;
-        width: 100%;
-        background-color: #f2f2f2;
-        border-radius: 30px;
+        height: 500px;
+        width: 95%;
         margin-top: -2%;
-        margin-left: -5%;
+        margin-left: 2%;
         margin-bottom: 5%;
+        margin-right: 2%;
 
     }
     .Pop{
-        height: 580px;
-        width: 100%;
-        background-color: #f2f2f2;
-        border-radius: 30px;
-        margin-left: -5%;
+        height: 600px;
+        width: 95%;
+        margin-left: 2%;
         margin-top: -2%;
         margin-bottom: 5%;
     }
+    .Pop-title{
+        padding-top: 2%;
+    }
     .Best-details{
-        display: flex;
-        align-items: center;
         margin-bottom: 2%;
-        justify-content: center;
+        margin-top: 2%;
     }
     .B-Room{
-        background-size: cover;
-        background-position: center;
         width: 240px;
         height: 140px;
-        border-radius: 10px 0 0 10px;
         margin-left: 5%;
         margin-bottom: 2%;
-        box-shadow: 5px 5px 10px #d5d5d5;
-        border: white solid 2px;
-        cursor: pointer;
-        flex-wrap: wrap;
+     
     }
     .Room-info{
-        background-color: white;
         height: 140px;
         width: 60%;
         margin-bottom: 2%;
         margin-right: 5%;
         padding-left: 5%;
         font-size: 80%;
-        border-radius: 0 15px 15px 0;
-        box-shadow: 5px 5px 10px #d5d5d5;
-        border: white solid 2px;
-        cursor: pointer;
     }
     .B-Roombis{
-        background-size: cover;
-        background-position: center;
         width: 120px;
         height: 80px;
-        border-radius: 10px 0 0 10px;
         margin-left: 5%;
         margin-bottom: 5%;
-        box-shadow: 5px 5px 10px #d5d5d5;
-        border: white solid 2px;
-        cursor: pointer;
-        flex-wrap: wrap;
     }
     .Pop-title{
         margin-right: 5%;
         margin-left: 5%;
-        display: flex;
         justify-content: space-between;
         margin-bottom: -5%;
         margin-top: -2%;
     }
     .B-Roombis{
-        background-size: cover;
-        background-position: center;
         width: 240px;
         height: 140px;
-        border-radius: 10px 0 0 10px;
         margin-left: 5%;
         margin-bottom: 2%;
-        box-shadow: 5px 5px 10px #d5d5d5;
-        border: white solid 2px;
-        cursor: pointer;
-        flex-wrap: wrap;
     }
     .Room-name{
-        font-weight: bold;
         font-size: 140%;
     }
     .noteB{
@@ -664,19 +650,15 @@ footer{
         margin-top: 5%;
     }
     .service-item{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        justify-content: space-around;
-        border: 2px solid #d5d5d5;
-        border-radius: 30px;
-        font-weight: bold;
         height: 30px;
         margin-right: 5px;
-        cursor: pointer;
+    }
+    .galerie{
+        width: 95%;
+        margin-left: 2%;
     }
     .Espace-activity{
+        width: 100%;
         display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -686,22 +668,15 @@ footer{
                 "pic-activity4 pic-activity5"
                 "pic-activity4 pic-activity6";
         margin-bottom: 5%;
+        margin-right: 5%;
     }
     .Espace-activityB{
         width: 100%;
         height: 420px;
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
     }
     .activity-cadre{
         width: 80%;
         height: 420px;
-        border-radius: 15px;
-        box-shadow: 5px 5px 5px 1px #f2f2f2;
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
         margin-bottom: 5%;
     }
     .Espace-activity{
@@ -710,41 +685,244 @@ footer{
     }
     .Pied-page{
         width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
     .nos-hebergements{
         width: 30%;
-        display: flex;
-        justify-content: center;
         margin-top: -5%;
     }
     .assisstance{
         width: 30%;
-        display: flex;
-        flex-direction: column;
         margin-top: -2%;
     }
     .A-propos{
         width: 30%;
-        display: flex;
-        flex-direction: column;
         margin-top: -2%;
-    }
-    .Menu1:hover{
-        color: #0065fc;
-        border: none;
     }
 }
 
 /* RESPONSIVE mobile */
 @media  screen and (max-width: 375px){
-    body{
-        margin: 5%;
+    .header{
+        height: 100px;
+        width: 100%;
+        align-items: flex-start;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-around;
     }
-    h1{
-        color: red;
+    header.header{
+        margin-left: 0%;
+        align-items: flex-start;
     }
+    .header img{
+        height: 40%;
+        width: 30%;
+        margin-left: 5%;
+    }
+    nav.menu{
+        flex-direction: row;
+        width: 100%;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 4%;
+    }
+    .Menu1{
+        order: 1;
+        width: 100%;
+        display: flex;
+        margin-left: -50%;
+        margin-right: 2%;
+        margin-top: 10%;
+        font-size: 110%;
+    }
+    .Hebergement{
+        margin-top: 18%;
+    }
+    .Act{
+        margin-top: 35%;
+    }
+    .big-title{
+        color: black;
+        font-size: 160%;
+        font-weight: bold;
+        width: 100%;
+    }
+    .landing-page{
+        width: 100%;
+        margin-left: 2%;
+    }
+    .S-inscrire{
+        width: 100%;
+        margin-left: 220%;
+        margin-top: 100%;
+        font-size: 110%;
+    }
+    .Menu1:hover{
+        border-top: none;
+    }
+    .Act:hover, .Hebergement:hover{
+        color: #0065fc;
+        border-bottom: #0065fc solid 2px;
+    }
+    .Act, .Hebergement{
+        border-bottom: #deebff solid 2px;
+        padding-bottom: 5%;
+    }
+    .barre-recherche{
+        align-content: center;
+        align-items: center;
+        margin-left: 2%;
+        width: 100%;
+    }
+    .filtre{
+        flex-wrap: wrap;
+        height: 200px;
+        justify-content: flex-start;
+        padding-top: 0%;
+        margin-left: 2%;
+    }
+    .filtre-title{
+        font-size: 140%;
+        width: 100%;
+        height: 10%;
+        margin-bottom: 0%;
+        margin-left: 2%;
+    }
+    .delivery-text{
+        font-size: 150%;
+        padding-left: 10px;
+    }
+    .delivery-icon{
+        height: 40px;
+        width: 40px;
+        margin-left: -2px;
+    }
+    .service-item{
+        margin-right: 7%;
+        height: 40px;
+    }
+    .info-text{
+        font-size: 120%;
+    }
+    .Premiers-cadres{
+        margin-right: 0%;
+        padding-left: 0%;
+        margin-left: 0%;
+        padding-right: 0%;
+        margin-bottom: 0%;
+    }
+    .Hb-Marseille{
+        height: 1300px;
+        background-color: white;
+        margin-left: 2%;
+    }
+    .Room-Marseille{
+        flex-direction: column;
+    }
+    .Room-details{
+        width: 100%;
+        height: 180px;
+    }
+    .Room{
+        height: 60%;
+    }
+    .RoomA{
+        background-image: url(images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 60%;
+        width: 100%;
+    }
+    .Pop{
+        height: 420px;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-radius: 0%;
+    }
+    .B-Room{
+        width: 30%;
+        height: 100px;
+    }
+    .Room-info{
+        height: 100px;
+        width: 45%;
+        font-size: 80%;
+        padding-right: 10%;
+    }
+    .Room-price{
+        margin-top: -2%;
+        margin-bottom: 1%;
+    }
+    .Room-name{
+        margin-top: 0%;
+    }
+    .noteB{
+        margin-top: 2%;
+    }
+    .galerie{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .galerie h2{
+        padding-bottom: 5%;
+    }
+    .Espace-activity{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        margin-top: 5%;
+    }
+    .pic-activity1, .pic-activity2, .pic-activity3, .pic-activity4, .pic-activity5, .pic-activity6{
+        width: 100%;
+        height: 100px;
+    }
+    .activity-cadre{
+        width: 100%;
+        height: 150px;
+        margin-top: -5%;
+    }
+    .activity-cadreB{
+        margin-bottom: 5%;
+    }
+    .Espace-activityB{
+        margin-bottom: 5%;
+        justify-content: start;
+    }
+    .margtop{
+        padding-top: 40%;
+    }
+    .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
+        height: 60%;
+    }
+    footer{
+        padding-top: 10%;
+    }
+    .Pied-page{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .A-propos, .hebergements, .Assistance{
+        margin-left: 0;
+        width: 100%;
+    }
+    .menu-pied, .ligne1, .ligne2{
+        margin-bottom: 5%;
+        width: 80%;
+    }
+    .menu-pied{
+        margin-left: 10%;
+    }
+    .titre-pied1, .titre-pied2{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 110%;
+        font-weight: bold;
+        width: 80%;
+        margin-left: 10%;
+    }
+    
 
 }
