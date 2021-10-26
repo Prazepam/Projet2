@@ -38,6 +38,7 @@ nav.menu{
     justify-content: space-between;
     padding-left: 40%;
     padding-right: 5%;
+    align-items: center;
 }
 
 .Menu1{
@@ -48,16 +49,22 @@ nav.menu{
     width: 90%;
     justify-content: space-between;
     margin-right: 20%;
-
+    align-items: center;
 }
 .S-inscrire{
     color: #0065fc;
     text-decoration: none;
     font-weight: bold;
 }
-.Menu1:hover{
+.Act:hover, .Hebergement:hover{
     color: #0065fc;
-    border-top: #0065fc 2px solid;
+    border-top: #0065fc solid 2px;
+}
+.Act, .Hebergement{
+    padding-top: 10%;
+}
+.Act{
+    padding-top: 18%;
 }
 
 .big-title{
@@ -112,6 +119,9 @@ nav.menu{
     cursor: pointer;
     border-radius: 0 10px 10px 0; 
 }
+.boutonMobile{
+    display: none;
+}
 
 /* filtres */
 .filtre{
@@ -122,7 +132,6 @@ nav.menu{
     padding-top: 2%;
     font-weight: bold;
     font-size: 60%;
-    width: 60%;
     margin-left: 5%;
 }
 .filtre-title{
@@ -715,9 +724,10 @@ footer{
         align-items: flex-start;
     }
     .header img{
-        height: 40%;
-        width: 30%;
+        height: 50%;
+        width: 40%;
         margin-left: 5%;
+        margin-top: 1%;
     }
     nav.menu{
         flex-direction: row;
@@ -727,27 +737,38 @@ footer{
         padding-left: 0%;
         padding-right: 0%;
         margin-top: 4%;
+        font-size: 100%;
     }
     .Menu1{
         order: 1;
-        width: 100%;
+        width: 120%;
         display: flex;
-        margin-left: -50%;
+        margin-left: -30%;
         margin-right: 2%;
-        margin-top: 10%;
         font-size: 110%;
     }
     .Hebergement{
-        margin-top: 18%;
+        margin-top: 15%;
+        margin-left: -30%;
+        justify-content: center;
     }
     .Act{
-        margin-top: 35%;
+        margin-top: 40%;
+        margin-bottom: 10%;
+        padding-bottom: 5%;
+        justify-content: center;
     }
     .big-title{
         color: black;
-        font-size: 160%;
+        font-size: 140%;
         font-weight: bold;
-        width: 100%;
+        width: 90%;
+        margin-left: 2%;
+        margin-top: 10%;
+    }
+    .Second-title{
+        margin-left: 2%;
+        width: 90%;
     }
     .landing-page{
         width: 100%;
@@ -755,8 +776,8 @@ footer{
     }
     .S-inscrire{
         width: 100%;
-        margin-left: 220%;
-        margin-top: 100%;
+        margin-left: 180%;
+        margin-top: -20%;
         font-size: 110%;
     }
     .Menu1:hover{
@@ -773,8 +794,27 @@ footer{
     .barre-recherche{
         align-content: center;
         align-items: center;
-        margin-left: 2%;
-        width: 100%;
+        margin-left: 4%;
+        width: 95%;
+    }
+    .Bouton{
+        width: 40px;
+        margin-right: 2%;
+        margin-left: 6%;
+        border-radius: 10px; 
+        border: solid 1px #0065fc;
+    }
+    .Espace-recherche{
+        padding-right: 12%;
+        width: 112%;
+        border-top: solid 1px #f2f2f2;
+        border-bottom: solid 1px #f2f2f2;
+    }
+    .boutonOrdi{
+        display: none;
+    }
+    .boutonMobile{
+        display: flex;
     }
     .filtre{
         flex-wrap: wrap;
@@ -923,6 +963,55 @@ footer{
         width: 80%;
         margin-left: 10%;
     }
-    
+}
 
+/* RESPONSIVE Gros écran*/
+@media  screen and (min-width: 1440px){
+    .Act, .Hebergement{
+        padding-top: 0%;
+    }
+    nav.menu{
+        font-size: 100%;
+        width: 50%;
+    }
+    .big-title{
+        font-size: 140%;
+    }
+    .filtre-title{
+        font-size: 140%;
+    }
+    .delivery-text{
+        font-size: 140%;
+    }
+    .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
+        height: 60%;
+    }
+    .margtop{
+        padding-top: 45%;
+    }
+    .Room-details{
+        height: 170px;
+    }
+    .noteB{
+        margin-top: 10%;
+    }
+    .noteC{
+        margin-top: 0%;
+    }
+    .Hb-Marseille h3{
+        margin-top: -4%;
+        font-size: 100%;
+    }
+    .Premiers-cadres h2{
+        font-size: 140%;
+    }
+    .Pop-title{
+        padding-bottom: 0%;
+    }
+    .ligne1, .ligne2{
+        margin-bottom: 5%;
+    }
+    .galerie h2{
+        font-size: 140%;
+    }
 }
