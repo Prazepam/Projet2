@@ -16,7 +16,6 @@ body
     height: 5%;
     width: 100%;
     margin-bottom: 0%;
-    margin-top: 5%;
 }
 header.header{
     display: flex;
@@ -39,6 +38,7 @@ nav.menu{
     padding-left: 40%;
     padding-right: 5%;
     align-items: center;
+    padding-top: 5%;
 }
 
 .Menu1{
@@ -50,18 +50,24 @@ nav.menu{
     justify-content: space-between;
     margin-right: 20%;
     align-items: center;
+    margin-top: -2%;
 }
 .S-inscrire{
     color: #0065fc;
     text-decoration: none;
     font-weight: bold;
+    padding-top: 10%;
 }
 .Act:hover, .Hebergement:hover{
     color: #0065fc;
     border-top: #0065fc solid 2px;
 }
+.S-inscrire:hover{
+    border-top: #0065fc 2px solid;
+}
 .Act, .Hebergement{
     padding-top: 10%;
+    padding-right: 10%;
 }
 .Act{
     padding-top: 18%;
@@ -133,6 +139,7 @@ nav.menu{
     font-weight: bold;
     font-size: 60%;
     margin-left: 5%;
+    width: 60%;
 }
 .filtre-title{
     margin-right: 2%;
@@ -240,7 +247,7 @@ nav.menu{
 
 }
 .margtop{
-    padding-top: 55%;
+    padding-top: 50%;
 }
 .RoomA{
     background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -502,6 +509,7 @@ span{
 footer{
     background-color:#f2f2f2;
     height: 100%;
+    margin-bottom: -2%;
 }
 .Pied-page{
     display: flex;
@@ -593,7 +601,7 @@ footer{
         height: 180px;
     }
     .Hb-Marseille{
-        height: 500px;
+        height: 530px;
         width: 95%;
         margin-top: -2%;
         margin-left: 2%;
@@ -727,7 +735,7 @@ footer{
         height: 50%;
         width: 40%;
         margin-left: 5%;
-        margin-top: 1%;
+        margin-top: 5%;
     }
     nav.menu{
         flex-direction: row;
@@ -743,20 +751,27 @@ footer{
         order: 1;
         width: 120%;
         display: flex;
-        margin-left: -30%;
-        margin-right: 2%;
+        margin-left: -50%;
         font-size: 110%;
+        margin-right: 0%;
     }
     .Hebergement{
-        margin-top: 15%;
-        margin-left: -30%;
+        margin-top: 6%;
         justify-content: center;
+        margin-left: 0%;
+        padding-left: 30%;
+        padding-right: 10%;
+        margin-right: 15%;
+        padding-bottom: 5%;
     }
     .Act{
         margin-top: 40%;
-        margin-bottom: 10%;
-        padding-bottom: 5%;
+        margin-bottom: 30%;
         justify-content: center;
+        padding-left: 15%;
+        padding-right: 60%;
+        margin-left: 5%;
+        padding-bottom: 8%;
     }
     .big-title{
         color: black;
@@ -789,7 +804,6 @@ footer{
     }
     .Act, .Hebergement{
         border-bottom: #deebff solid 2px;
-        padding-bottom: 5%;
     }
     .barre-recherche{
         align-content: center;
@@ -932,7 +946,7 @@ footer{
         justify-content: start;
     }
     .margtop{
-        padding-top: 40%;
+        padding-top: 35%;
     }
     .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
         height: 60%;
@@ -969,11 +983,23 @@ footer{
 /* RESPONSIVE Gros écran*/
 @media  screen and (min-width: 1440px){
     .Act, .Hebergement{
-        padding-top: 0%;
+        padding-top: 5%;
+        padding-right: 35%;
+    }
+    .header img{
+        padding-right: 40%;
     }
     nav.menu{
         font-size: 100%;
-        width: 50%;
+        width: 30%;
+        padding-top: 2%;
+        padding-left: 15%;
+    }
+    .Menu1{
+        padding-top: 5%;
+        width: 65%;
+        margin-top: -5%;
+        justify-content: space-between;
     }
     .big-title{
         font-size: 140%;
@@ -1015,5 +1041,77 @@ footer{
     }
     .galerie h2{
         font-size: 140%;
+    }
+}
+@media  screen and (min-width: 1920px){
+    .header img{
+        padding-right: 45%;
+    }
+    .filtre{
+        width: 50%;
+    }
+    .Act, .Hebergement{
+        padding-right: 32%;
+    }
+    .Menu1{
+        width: 70%;
+        padding-top: 5%;
+    }
+    .Hebergemen{
+        margin-left: 10%;
+    }
+    nav.menu{
+        padding-top: 0%;
+    }
+    .Hb-Marseille{
+        height: 680px;
+    }
+    .margtop{
+        padding-top: 50%;
+    }
+    .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
+        margin-top: -4%;
+    }
+    .Room-details{
+        height: 240px;
+    }
+    .Pop{
+        height: 680px;
+    }
+    .B-Room{
+        height: 150px;
+    }
+    .Room-info{
+        height: 150px;
+    }
+    .noteB{
+        margin-top: 20%;
+    }
+    .noteC{
+        margin-top: 15%;
+    }
+    .Espace-activity{
+        height: 600px;
+    }
+    .activity-cadre{
+        height: 580px;
+    }
+    .pic-activity1, .pic-activity4{
+        height: 560px;
+    }
+    .pic-activity2{
+        height: 230px;
+    }
+    .pic-activity3{
+        height: 150px;
+    }
+    .pic-activity5{
+        height: 180px;
+    }
+    .pic-activity6{
+        height: 200px;
+    }
+    .activity-cadreB{
+        margin-bottom: 23%;
     }
 }
