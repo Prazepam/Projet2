@@ -35,28 +35,38 @@ nav.menu{
     list-style-type: none;
     width: 40%;
     justify-content: space-between;
-    padding-left: 40%;
+    padding-left: 50%;
     padding-right: 5%;
     align-items: center;
     padding-top: 5%;
 }
-
+.menu ul{
+    list-style-type: none;
+    padding-left: 0%;
+}
+.Menu1 ul{
+    list-style-type: none;
+    display: flex;
+    width: 110%;
+    margin-left: 0%;
+    justify-content: space-between;
+    padding-left: 0%;
+}
 .Menu1{
     color: black;
     list-style-type: none;
     text-decoration: none;
-    display: flex;
     width: 90%;
     justify-content: space-between;
     margin-right: 20%;
     align-items: center;
-    margin-top: -2%;
+    margin-top: 0%;
 }
 .S-inscrire{
     color: #0065fc;
     text-decoration: none;
     font-weight: bold;
-    padding-top: 10%;
+    padding-top: 15%;
 }
 .Act:hover, .Hebergement:hover{
     color: #0065fc;
@@ -530,16 +540,20 @@ footer{
     text-decoration: none;
     color: black;
     margin-top: 5%;
+    padding-top: 5%;
+    height: 30px;
+}
+.menu-pied li{
+    margin-bottom: 5%;
+}
+.menu-pied ul{
+    list-style-type: none;
+    padding-left: 0%;
 }
 .menu-pied{
     list-style-type: none;
-    margin: 5%;
-}
-.ligne1{
-    margin-bottom: 10%;
-}
-.ligne2{
-    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-bottom: 5%;
 }
 .A-propos, .Assistance, .hebergements{
     width: 30%;
@@ -556,9 +570,13 @@ footer{
         width: 100%;
         padding-left: 30%;
     }
+    .Menu1 ul{
+        width: 105%;
+    }
     header img {
         width: 15%;
         height: 7%;
+        margin-top: 5%;
     }
     .filtre{
         justify-content: center;
@@ -715,12 +733,15 @@ footer{
         width: 30%;
         margin-top: -2%;
     }
+    .titre-pied1{
+        margin-top: 20%;
+    }
 }
 
 /* RESPONSIVE mobile */
 @media  screen and (max-width: 375px){
     .header{
-        height: 100px;
+        height: 120px;
         width: 100%;
         align-items: flex-start;
         margin-left: 0;
@@ -744,7 +765,6 @@ footer{
         flex-wrap: wrap;
         padding-left: 0%;
         padding-right: 0%;
-        margin-top: 4%;
         font-size: 100%;
     }
     .Menu1{
@@ -756,22 +776,19 @@ footer{
         margin-right: 0%;
     }
     .Hebergement{
-        margin-top: 6%;
+        margin-top: 0%;
         justify-content: center;
-        margin-left: 0%;
         padding-left: 30%;
         padding-right: 10%;
         margin-right: 15%;
         padding-bottom: 5%;
     }
     .Act{
-        margin-top: 40%;
-        margin-bottom: 30%;
+        margin-top: 1%;
         justify-content: center;
-        padding-left: 15%;
-        padding-right: 60%;
-        margin-left: 5%;
+        padding-right: 70%;
         padding-bottom: 8%;
+        padding-left: 50%;
     }
     .big-title{
         color: black;
@@ -1001,6 +1018,9 @@ footer{
         margin-top: -5%;
         justify-content: space-between;
     }
+    .Menu1 ul{
+        width: 100%;
+    }
     .big-title{
         font-size: 140%;
     }
@@ -1054,8 +1074,11 @@ footer{
         padding-right: 32%;
     }
     .Menu1{
-        width: 70%;
+        width: 100%;
         padding-top: 5%;
+    }
+    .Menu1 ul{
+        width: 100%;
     }
     .Hebergemen{
         margin-left: 10%;
