@@ -3,7 +3,6 @@
     font-family: 'Raleway';
     src: url('Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
-    font-size: normal;
 }
 
 body
@@ -96,7 +95,6 @@ nav.menu{
     display: flex;
     align-items: center;
     width: 40%;
-    border: 0,5px solid #f2f2f2;
     margin-left: 5%;
 }
 .Espace-recherche{
@@ -110,6 +108,7 @@ nav.menu{
     font-weight: bold;
     border: none;
     padding-left: 20px;
+    border: 1px solid #f2f2f2;
 }
 
 .Icon-recherche{
@@ -123,6 +122,9 @@ nav.menu{
     border-radius: 10px 0 0 10px;
 
     
+}
+.Bouton h2{
+    font-size: 100%;
 }
 .Bouton{
     display: flex;
@@ -149,7 +151,7 @@ nav.menu{
     font-weight: bold;
     font-size: 60%;
     margin-left: 5%;
-    width: 60%;
+    width: 80%;
 }
 .filtre-title{
     margin-right: 2%;
@@ -1023,6 +1025,9 @@ footer{
     }
     .big-title{
         font-size: 140%;
+    }
+    .filtre{
+        width: 60%;
     }
     .filtre-title{
         font-size: 140%;
