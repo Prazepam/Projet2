@@ -267,19 +267,19 @@ nav.menu{
     background-image: url(images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
 }
 .RoomB{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
 }
 .RoomC{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
 }
 .RoomD{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
 }
 .RoomE{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
 }
 .RoomF{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-image: url(images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
 }
 .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
     background-size: cover;
@@ -462,7 +462,7 @@ span{
 }
 
 .pic-activity1{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-image: url(images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -471,7 +471,7 @@ span{
 }
 
 .pic-activity2{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-image: url(images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 170px;
@@ -480,7 +480,7 @@ span{
 }
 
 .pic-activity3{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-image: url(images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100px;
@@ -488,7 +488,7 @@ span{
     border-radius: 15px 15px 0 0;
 }
 .pic-activity4{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-image: url(images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -496,7 +496,7 @@ span{
     border-radius: 15px 15px 0 0;
 }
 .pic-activity5{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-image: url(images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 130px;
@@ -504,7 +504,7 @@ span{
     border-radius: 15px 15px 0 0;
 }
 .pic-activity6{
-    background-image: url(/Users/vincentbriquet/Documents/Projet2/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-image: url(images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 150px;
