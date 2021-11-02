@@ -67,7 +67,7 @@ nav.menu{
     color: #0065fc;
     text-decoration: none;
     font-weight: bold;
-    padding-top: 30%;
+    padding-top: 33%;
 }
 .Act:hover, .Hebergement:hover{
     color: #0065fc;
@@ -77,11 +77,11 @@ nav.menu{
     border-top: #0065fc 2px solid;
 }
 .Act, .Hebergement{
-    padding-top: 18%;
+    padding-top: 20%;
     padding-right: 0%;
 }
 .Act{
-    padding-top: 30%;
+    padding-top: 35%;
 }
 
 .big-title{
@@ -365,19 +365,6 @@ span{
     cursor: pointer;
     flex-wrap: wrap;
 }
-.B-Roombis{
-    background-size: cover;
-    background-position: center;
-    width: 45%;
-    height: 120px;
-    border-radius: 10px 0 0 10px;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    box-shadow: 5px 5px 10px #d5d5d5;
-    border: white solid 2px;
-    cursor: pointer;
-    flex-wrap: wrap;
-}
 
 .Best-details{
     display: flex;
@@ -417,9 +404,6 @@ span{
     font-weight: bold;
 }
 .Room-info:hover > .Room-name{
-    color: #0065fc;
-}
-.B-Room:hover > .Room-name{
     color: #0065fc;
 }
 
@@ -570,6 +554,7 @@ footer{
     margin-left: 2%;
 }
 /* PARTIE RESPONSIVE */
+
 @media  screen and (max-width: 768px){
     .top-page{
         margin-left: 0%;
@@ -641,6 +626,9 @@ footer{
         margin-bottom: 5%;
         margin-right: 2%;
 
+    }
+    .Room-nameA{
+        font-size: 150%;
     }
     .Pop{
         height: 600px;
@@ -754,7 +742,7 @@ footer{
 }
 
 /* RESPONSIVE mobile */
-@media  screen and (max-width: 375px){
+@media  screen and (max-width: 414px){
     .header{
         height: 120px;
         width: 100%;
@@ -781,32 +769,35 @@ footer{
         padding-right: 0%;
         font-size: 100%;
     }
+    .Menu1 ul{
+        justify-content: start;
+    }
     .Menu1{
         order: 1;
         width: 120%;
         display: flex;
-        margin-left: -50%;
+        margin-left: -40%;
         font-size: 110%;
-        margin-right: 0%;
     }
     .Hebergement{
         margin-top: 0%;
         justify-content: center;
         padding-left: 40%;
-        padding-right: 10%;
-        margin-right: 15%;
+        padding-right: 20%;
+        margin-right: 2%;
         padding-bottom: 5%;
     }
     .Act{
         margin-top: 1%;
         justify-content: center;
-        padding-right: 70%;
         padding-bottom: 8%;
-        padding-left: 50%;
+        padding-left: 35%;
+        padding-right: 85%;
+        margin-left: 70%;
     }
     .big-title{
         color: black;
-        font-size: 140%;
+        font-size: 150%;
         font-weight: bold;
         width: 90%;
         margin-left: 2%;
@@ -822,9 +813,10 @@ footer{
     }
     .S-inscrire{
         width: 100%;
-        margin-left: 180%;
+        margin-left: 200%;
         margin-top: -20%;
         font-size: 110%;
+        padding-top: 30%;
     }
     .Menu1:hover{
         border-top: none;
@@ -839,8 +831,8 @@ footer{
     .barre-recherche{
         align-content: center;
         align-items: center;
-        margin-left: 4%;
-        width: 95%;
+        margin-left: 10%;
+        width: 90%;
     }
     .Bouton{
         width: 40px;
@@ -867,6 +859,8 @@ footer{
         justify-content: flex-start;
         padding-top: 0%;
         margin-left: 2%;
+        font-size: 70%;
+        width: 95%;
     }
     .filtre-title{
         font-size: 140%;
@@ -885,8 +879,9 @@ footer{
         margin-left: -2px;
     }
     .service-item{
-        margin-right: 7%;
+        margin-right: 5%;
         height: 40px;
+        margin-left: 5%;
     }
     .info-text{
         font-size: 120%;
@@ -909,6 +904,7 @@ footer{
     .Room-details{
         width: 100%;
         height: 180px;
+        background-color: transparent;
     }
     .Room{
         height: 60%;
@@ -929,6 +925,7 @@ footer{
         width: 45%;
         font-size: 80%;
         padding-right: 10%;
+        border: #fffefe 2px solid;
     }
     .Room-price{
         margin-top: -2%;
@@ -970,7 +967,7 @@ footer{
         justify-content: start;
     }
     .margtop{
-        padding-top: 35%;
+        padding-top: 32%;
     }
     .RoomA, .RoomB, .RoomC, .RoomD, .RoomE, .RoomF{
         height: 60%;
@@ -1003,18 +1000,80 @@ footer{
         margin-left: 10%;
     }
 }
+@media  screen and (max-width: 375px){
+    .big-title{
+        font-size: 140%;
+    }
+    .Hebergement{
+        padding-left: 25%;
+        padding-right: 20%;
+    }
+    .Act{
+        padding-right: 42%;
+        margin-left: 45%;
+    }
+    .S-inscrire{
+        margin-left: 180%;
+    }
+    .barre-recherche{
+        margin-left: 5%;
+    }
+    .filtre{
+        font-size: 60%;
+    }
+    .service-item{
+        margin-left: 3%;
+    }
+    .margtop{
+        padding-top: 35%;
+    }
+}
+@media  screen and (max-width: 320px){
+    .Menu1{
+        width: 100%;
+        font-size: 100%;
+        margin-left: -50%;
+    }
+    .S-inscrire{
+        margin-left: 100%;
+    }
+    .Hebergement{
+        padding-right: 30%;
+        padding-left: 40%;
+    }
+    .Act{
+        margin-left: 10%;
+        padding-right: 72%;
+        padding-left: 60%;
+    }
+    .big-title{
+        font-size: 120%;
+    }
+    .filtre{
+        font-size: 45%;
+    }
+    .Room-name{
+        font-size: 115%;
+    }
+    .noteB{
+        margin-top: 10%;
+    }
+    .margtop{
+        padding-top: 40%;
+    }
+}
 
 /* RESPONSIVE Gros écran*/
 @media  screen and (min-width: 1440px){
     .Act, .Hebergement{
-        padding-top: 25%;
+        padding-top: 26%;
         padding-right: 0%;
     }
     .Act{
         padding-top: 45%;
     }
     .S-inscrire{
-        padding-top: 40%;
+        padding-top: 43%;
     }
     .header img{
         padding-right: 40%;
@@ -1077,6 +1136,7 @@ footer{
         font-size: 140%;
     }
 }
+
 @media  screen and (min-width: 1920px){
     .header img{
         padding-right: 45%;
@@ -1092,14 +1152,14 @@ footer{
     }
     .Act, .Hebergement{
         padding-right: 0%;
-        padding-top: 24%;
+        padding-top: 25%;
         height: 30px;
     }
     .Act{
         padding-top: 44%;
     }
     .S-inscrire{
-        padding-top: 39%;
+        padding-top: 42%;
     }
     .Menu1{
         width: 100%;
@@ -1170,7 +1230,7 @@ footer{
         margin-top: 20%;
     }
     .noteC{
-        margin-top: 15%;
+        margin-top: 10%;
     }
     .Espace-activity{
         height: 600px;
